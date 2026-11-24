@@ -3,140 +3,76 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
+    <meta name="description" content="Prasiddha Thapa — mathematics student at Howard University. Research, projects, and personal notes.">
+    <meta name="theme-color" content="#f4efe5">
     <title>Prasiddha Thapa</title>
-
     <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
 </head>
-
 <body>
-
-    <!-- LEFT SIDEBAR -->
-    <aside class="sidebar">
-        <nav>
-            <a href="#about">About</a>
-            <a href="#research">Research</a>
-            <a href="#projects">Projects</a>
-            <a href="#writing">Writing</a>
-            <a href="resume.pdf">Resume</a>
-        </nav>
-
-        <div class="sidebar-bottom">
-            <a href="https://github.com/tpras07" target="_blank">
-                GitHub
-            </a>
-
-            <a href="mailto:prasiddhathapa2025@gmail.com">
-                prasiddhathapa2025@gmail.com
-            </a>
-        </div>
-
-    </aside>
-
-
-    <!-- MAIN CONTENT -->
-    <main>
-
-        <section class="home" id="about">
-
-            <div class="intro">
-
-                <p class="description">
-                    Welcome! I'm Prasiddha Thapa. I am an undergraduate mathematics student at Howard University.
-                    My interests cover mathematical problem solving, machine learning, and data analysis. I also enjoy mathematical modeling.
-                </p>
-
-                <p class="description">
-                    Currently, I am exploring spiking neural networks
-                    and, more generally, the mathematical foundations of machine learning.
-                </p>
-
+    <a class="skip-link" href="#main">Skip to content</a>
+    <main id="main">
+        <header class="intro">
+            <div class="intro-copy">
+                <h1>Prasiddha Thapa</h1>
+                <p>I study mathematics at Howard University.<br class="desktop-break"> I'm exploring learning, intelligence, and the mathematics behind them.</p>
+                <nav class="contact-links" aria-label="Contact and profiles">
+                    <a href="mailto:prasiddhathapa2025@gmail.com">Email</a>
+                    <!-- Replace the placeholder with your LinkedIn profile URL. -->
+                    <a href="https://www.linkedin.com/in/YOUR-PROFILE/">LinkedIn</a>
+                    <a href="resume.pdf">Resume</a>
+                    <a href="https://github.com/tpras07">GitHub</a>
+                </nav>
             </div>
+            <img class="portrait" src="images/profile.jpg" alt="Prasiddha Thapa" width="200" height="240" fetchpriority="high">
+        </header>
 
-
-            <div class="portrait">
-                <img src="images/profile.jpg" alt="my pfp">
-            </div>
-
+        <section class="updates" aria-labelledby="updates-title">
+            <h2 class="eyebrow" id="updates-title">Updates</h2>
+            <!-- Replace these sample updates and dates. Entries sort newest first automatically. -->
+            <ol class="timeline">
+                <li><time datetime="2026-11-01">Nov 2026</time><p>Your latest update goes here. <strong>A project, presentation, or milestone.</strong></p></li>
+                <li><time datetime="2026-10-01">Oct 2026</time><p>An earlier update goes here. Add a link if there's more to share.</p></li>
+                <li><time datetime="2026-09-01">Sep 2026</time><p>Another update goes here. A sentence or two is enough.</p></li>
+            </ol>
         </section>
 
-        <!-- RESEARCH -->
-        <section class="page-section" id="research">
-
-            <p class="section-number">01</p>
-
-            <h2>Research</h2>
-
-            <div class="entry">
-
-                <h3>Spiking Neural Networks</h3>
-
-                <p>
-                    Studying the dynamics and learning mechanisms of
-                    spiking neural networks, with an interest in their
-                    mathematical structure and biological motivation.
-                </p>
-
-                <span class="meta">
-                    Howard University · 2026–
-                </span>
-
+        <section class="work" aria-label="Projects, research, and personal interests">
+            <div class="tabs" aria-label="Explore my work">
+                <button type="button" id="tab-projects" aria-controls="projects">Projects</button>
+                <button type="button" id="tab-research" aria-controls="research">Research</button>
+                <button type="button" id="tab-personal" aria-controls="personal">Personal</button>
             </div>
-
-
-            <div class="entry">
-
-                <h3>Future Research</h3>
-
-                <p>
-                    This space will eventually contain ongoing and
-                    completed research projects.
-                </p>
-
-            </div>
-
+            <section class="panel" id="projects" aria-labelledby="tab-projects">
+                <article class="entry">
+                    <h3><a href="https://github.com/tpras07/vectorheart">VectorHeart</a></h3>
+                    <p>A research workspace bringing together a notebook, a canvas, and AI-assisted exploration.</p>
+                </article>
+                <article class="entry">
+                    <h3><a href="https://github.com/tpras07/Data-Science-Project-1">Memory &amp; aging</a></h3>
+                    <p>Cleaning and analyzing a fictional dataset of 600 older adults with repeated memory tests and brain measures. A group project for <em>Intro to Data Science</em>.</p>
+                </article>
+            </section>
+            <section class="panel" id="research" aria-labelledby="tab-research">
+                <article class="entry">
+                    <h3>Spiking neural networks</h3>
+                    <p>Exploring the dynamics and learning mechanisms of spiking neural networks, with an interest in their mathematical structure and biological motivation.</p>
+                </article>
+                <!-- Replace this entry with your research details. -->
+                <article class="entry placeholder">
+                    <h3>More research</h3>
+                    <p>Add a research question, an ongoing experiment, or a paper here.</p>
+                </article>
+            </section>
+            <section class="panel" id="personal" aria-labelledby="tab-personal">
+                <!-- Replace with your interests, notes, or anything outside your work. -->
+                <article class="entry placeholder">
+                    <h3>A little outside the work</h3>
+                    <p>A space for what you're reading, thinking about, or enjoying lately. Make it your own.</p>
+                </article>
+            </section>
         </section>
-
-
-        <!-- PROJECTS -->
-        <section class="page-section" id="projects">
-
-            <p class="section-number">02</p>
-
-            <h2>Projects</h2>
-
-            <div class="entry">
-
-                <h3>
-                    <a href="https://github.com/tpras07/Data-Science-Project-1">
-                        Data Analysis of Memory & Aging Cohort
-                    </a>
-                </h3>
-
-                <p>
-I cleaned a fictional dataset containing 600 older adults with repeated memory tests and brain measures. It is a group project for <i>Intro to Data Science</i>. 
-                </p>
-
-            </div>
-
-
-            <div class="entry">
-
-                <h3>
-                    <a href="YOUR_GITHUB_REPO">
-                        Spiking Neural Network Experiments
-                    </a>
-                </h3>
-
-                <p>
-                    Implementations and experiments involving
-                    spiking neural networks.
-                </p>
-
-            </div>
-
-        </section>
+        <footer>Prasiddha Thapa</footer>
     </main>
-
 </body>
 </html>
